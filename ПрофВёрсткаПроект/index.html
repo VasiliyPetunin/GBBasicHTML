@@ -6,14 +6,48 @@
     <title>Main</title>
     <link rel="stylesheet" href="fontAwesome/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@next"></script>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header-content">
                 <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"><span class="brandText">bran<span class="letter">d</span></span></a>
-                <form action="#" class="search-form">
-                    <button class="browseButton">Browse <i class="fa fa-caret-down browseButton-arrow-color" aria-hidden="true"></i></button>
+                <div class="dropdown">
+                    <button class="browseButton" @click="showDropdownMenu = !showDropdownMenu">Browse <i class="fa fa-caret-down browseButton-arrow-color" aria-hidden="true"></i></button>
+                    <div class="dropdown-menu" v-show="showDropdownMenu">
+                        <div class="dropdown-menu-content">
+                            <div>
+                                <h3 class="dropdown-title">Women</h3>
+                                <ul class="dropdown-ul">
+                                    <li class="dropdown-li"><a href="#" class="dropdown-link">Dresses</a></li>
+                                    <li class="dropdown-li"><a href="#" class="dropdown-link">Tops</a></li>
+                                    <li class="dropdown-li"><a href="#" class="dropdown-link">Sweaters/Knits</a></li>
+                                    <li class="dropdown-li"><a href="#" class="dropdown-link">Jackets/Coats</a></li>
+                                    <li class="dropdown-li"><a href="#" class="dropdown-link">Blazers</a></li>
+                                    <li class="dropdown-li"><a href="#" class="dropdown-link">Denim</a></li>
+                                    <li class="dropdown-li"><a href="#" class="dropdown-link">Leggins/Pants</a></li>
+                                    <li class="dropdown-li"><a href="#" class="dropdown-link">Skirts/Shorts</a></li>
+                                    <li class="dropdown-li"><a href="#" class="dropdown-link">Accessories</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu-content">
+                            <div>
+                                <h3 class="dropdown-title">Men</h3>
+                                <ul class="dropdown-ul">
+                                    <li class="dropdown-li"><a href="#" class="dropdown-link">Tess/Tank tops</a></li>
+                                    <li class="dropdown-li"><a href="#" class="dropdown-link">Shirts/Polos</a></li>
+                                    <li class="dropdown-li"><a href="#" class="dropdown-link">Sweaters</a></li>
+                                    <li class="dropdown-li"><a href="#" class="dropdown-link">Sweatshirts/Hoodies</a></li>
+                                    <li class="dropdown-li"><a href="#" class="dropdown-link">Blazers</a></li>
+                                    <li class="dropdown-li"><a href="#" class="dropdown-link">Jackets/Vests</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form action="#" class="search-form"></form>
                     <input type="text" placeholder="Search for item..." class="searchInput">
                     <!-- <input type="button" value="#" class="searchButton"> -->
                     <button class="searchButton"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -79,7 +113,8 @@
                     <p class="products-title-2">Shop for items based on what we featured in this week</p>
                 </article>
                 <section class="products-cards">
-                    <figure class="product-card">
+                    <figure class="product-card" v-for="product of productsOnIndexPage" :key="product.id_product">
+                        <!-- ОСТАНОВИЛСЯ ТУТ(НАДО ДОПИСАТЬ В HTML, ДОБАВИТЬ ДАННЫЕ В JSON, ПОТОМ ОТЛАДИТЬ) -->
                         <img src="images/product-card-1.jpg" alt="product-card-1-IMG" class="product-card-IMG">
                         <figcaption class="products-cards-description">
                             <p class="product-card-title">Mango  People  T-shirt</p>
@@ -160,7 +195,8 @@
                         </div>
                     </figure>
                 </section>
-                <input type="button" value="Browse All Product &rarr;" class="productButton">
+                <!-- <input type="button" value="Browse All Product &rarr;" class="product-button"> -->
+                <button class="product-button"><a href="Products.html" class="product-button-link">Browse All Product &rarr;</a></button>
             </div>
         </div>
     </div>
@@ -273,5 +309,8 @@
             </div>
         </div>
     </div>
+
+    <script src="js/dropdownMenu.js"></script>
+    <script src="js/catalog.js"></script>
 </body>
 </html>

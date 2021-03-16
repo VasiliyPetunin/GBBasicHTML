@@ -70,7 +70,7 @@ img[alt="logo"] {
 .brandText {
     font-family: 'Lato', sans-serif;
     font-size: 29px;
-    font-weight: 300;
+    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.19;
@@ -102,8 +102,6 @@ img[alt="logo"] {
     line-height: 2.29;
     letter-spacing: 0.35px;
     color: #222222;
-    padding-top: 3px;
-    padding-bottom: 3px;
     padding-left: 15px;
     padding-right: 15px;
 
@@ -117,6 +115,70 @@ img[alt="logo"] {
 .fa-caret-down {
     padding-left: 5px;
 }
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: -10px;
+    z-index: 1;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    box-shadow: 0 0 1px 1px #e8e8e8;
+}
+
+.dropdown-menu-content {
+    padding: 10px 15px;
+}
+
+.dropdown-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.29;
+    letter-spacing: 0.35px;
+    color: #232323;
+    text-transform: uppercase;
+    padding-right: 180px;
+    border-bottom: 1px solid #e8e8e8 ;
+}
+
+.dropdown-li {
+    list-style-type: none;
+    padding: 2px 0;
+}
+
+.dropdown-link {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 0.35px;
+    color: #4f4f4f;
+    text-decoration: none;
+
+    transition: opacity 0.3s;
+}
+
+.dropdown-link:hover {
+    opacity: 0.5;
+}
+
+.dropdown-link:active {
+    color: #f16d7f;
+    opacity: 1;
+    transition: none;
+}
+
 
 .searchInput {
     width: 265px;
@@ -188,7 +250,7 @@ img[alt="logo"] {
     height: 38px; */
     background-color: #f16d7f;
     border: 0;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
@@ -278,14 +340,14 @@ img[alt="logo"] {
     height: 97px;
     background-color: #f16d7f;
     position: absolute;
-    top: 240px;
+    top: 235px;
     left: 0px;
 }
 
 .slider-text {
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 700;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -519,16 +581,7 @@ img[alt="AddToCartHover"] {
     text-decoration: underline;
 }
 
-.productButton {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 3.38;
-    letter-spacing: 0.4px;
-    /* text-align: center; */
-    color: #ffffff;
+.product-button {
     background-color: #f16d7f;
     border: none;
     padding-left: 25px;
@@ -539,6 +592,19 @@ img[alt="AddToCartHover"] {
     margin-bottom: 115px;
 
     transition: opacity 0.5s;
+}
+
+.product-button-link {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.38;
+    letter-spacing: 0.4px;
+    /* text-align: center; */
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .featured-content {
