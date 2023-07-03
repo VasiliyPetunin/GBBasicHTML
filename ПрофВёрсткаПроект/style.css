@@ -505,6 +505,7 @@ img[alt="forma3"] {
     letter-spacing: 0.35px;
     color: #fbfbfb;
     padding-right: 100px;
+    padding-top: 15px;
 }
 
 .subscribeField {
@@ -515,12 +516,10 @@ img[alt="forma3"] {
     background-image: url(images/subscribeBackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 100px;
 }
 
 .subscribe-content {
     display: flex;
-    padding-top: 150px;
 }
 
 .quotes {
@@ -531,13 +530,15 @@ img[alt="forma3"] {
 img[alt="BinBurhan"] {
     width: 83px;
     height: 83px;
+    padding-top: 150px;
 }
 
 .quotesField {
     display: flex;
     flex-direction: column;
-    padding-top: 12px;
+    padding-top: 150px;
     padding-left: 30px;
+    padding-right: 72px;
     position: relative;
 }
 
@@ -564,7 +565,7 @@ img[alt="BinBurhan"] {
     letter-spacing: 0.3px;
     text-align: left;
     color: #222224;
-    margin-bottom: 248px;
+    margin-bottom: 300px;
 }
 
 .quotes-author-color {
@@ -580,17 +581,495 @@ img[alt="BinBurhan"] {
 .subscribe-rectangles {
     display: flex;
     position: absolute;
-    top: 200px;
+    top: 315px;
+    right: 285px;
 }
 
 .subscribe-rectangle {
     width: 38px;
-    border: solid 2px #d6d6d6;
+    height: 4px;
     background-color: #d6d6d6;
+    border: none;
+    /* box-shadow: 0 0 2px 2px lightgrey; */
     margin: 0 13px;
 }
 
 .subscribe-rectangle-active {
-    width: 36px;
-    border: solid 3px #f16d7f;
+    background-color: #f16d7f;
+}
+
+.subscribeField {
+    padding-left: 190px;
+    border-left: solid 1px lightgray
+}
+
+.subscribeField-text {
+    padding-top: 150px;
+    margin-bottom: 35px;
+}
+
+.subscribeField-text-title {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.25;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #222224;
+    text-transform: uppercase;
+}
+
+.subscribeField-text-description {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+    text-align: center;
+    color: #222224;
+    text-transform: uppercase;
+}
+
+.subscribeField-input-text {
+    width: 250px;
+    height: 46px;
+    border: none;
+    border-radius: 23px 0 0 23px;
+    background-color: #e1e1e1;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.86;
+    letter-spacing: 0.35px;
+    color: rgba(34, 34, 36, 0.67);
+    padding-left: 28px;
+}
+
+.subscribeField-input-button {
+    width: 100px;
+    height: 46px;
+    background-color: #f16d7f;
+    border: none;
+    border-radius: 0 23px 23px 0;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.35px;
+    color: #ffffff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+}
+
+.footer-brand {
+    width: 427px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.footer-brand-logo {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer-brand-text {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.35px;
+    color: #898989;
+    margin-bottom: 90px;
+}
+
+.footer-brand-text-block {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-company {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 90px;
+}
+
+.footer-company a:nth-of-type(1) {
+    margin-top: auto;
+}
+
+.footer-information {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 90px;
+}
+
+.footer-information a:nth-of-type(1) {
+    margin-top: auto;
+}
+
+.footer-shop-category {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 90px;
+}
+
+.footer-shop-category a:nth-of-type(1) {
+    margin-top: auto;
+}
+
+.footer-title {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: 0.45px;
+    color: #f16d7f;
+    text-transform: uppercase;
+}
+
+.footer-link {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.63;
+    letter-spacing: 0.4px;
+    color: #898989;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    background-color: #e6e6e6;
+}
+
+.copyright-content {
+    display: flex;
+}
+
+.copyright-content a:nth-of-type(1) {
+    margin-left: auto;
+}
+
+.copyright-text {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.63;
+    letter-spacing: 0.4px;
+    color: #7a7a7a;
+    padding-top: 20px;
+}
+
+.copyright-socNet {
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.copyright-socNet:hover {
+    opacity: 0.5;
+}
+
+/* Styles for products.html down here */
+
+.newArrivalBlock {
+    background-color: #f8f3f4;
+}
+
+.newArrivalBlock-content {
+    display: flex;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.newArrivalBlock-h1 {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.83;
+    letter-spacing: normal;
+    color: #f16d7f;
+    text-transform: uppercase;
+}
+
+.newArrivalBlock-p {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #636363;
+    text-transform: uppercase;
+    margin-left: auto;
+}
+
+.newArrivalBlock-p-active {
+    font-weight: bold;
+    color: #f16d7f;
+}
+
+.newArrivalBlock-p-a {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #636363;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.newArrivalBlock-p-a:hover {
+    opacity: 0.5;
+}
+
+.productHTML-product-content {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 60px;
+    position: relative;
+}
+
+.sidebar {
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-specification {
+    width: 225px;
+    height: 35px;
+}
+
+.sidebar div {
+    border-left: solid 5px #ef5b70;
+    border-bottom: solid 1px #ebebeb;
+    margin-bottom: 20px;
+}
+
+.sidebar-specification {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.sidebar-specification-text {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    /* line-height: 1.43; */
+    letter-spacing: normal;
+    color: #6f6e6e;
+    text-transform: uppercase;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sidebar-specification-text-active {
+    color: #ef5b70;
+}
+
+.sidebar-arrow {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    /* line-height: 1.43; */
+    color: #6f6e6e;
+    /* text-transform: uppercase; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.top-filter {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 50px;
+}
+
+.top-filter-block {
+    width: 250px;
+    margin-right: 40px;
+}
+
+.top-filter-h1 {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6f6e6e;
+    text-transform: uppercase;
+}
+
+.top-filter-1-text {
+    color: #dfdfdf;
+}
+
+.top-filter-1-text a:nth-of-type(1) {
+    padding: 0;
+}
+
+.top-filter-text-1-link {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    color: #6f6e6e;
+    text-decoration: none;
+    padding: 0px 15px;
+}
+
+.top-filter-text-1-link-block {
+    display: block;
+    padding-top: 22px;
+}
+
+.top-filter-text-1-link-block a:nth-of-type(1) {
+    padding: 0;
+}
+
+.top-filter-text-1-link:hover {
+    opacity: 0.5;
+}
+
+.top-filter-2-form {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 12px;
+}
+
+.checkbox-size {
+    padding-right: 25px;
+    padding-top: 15px;
+}
+
+.checkbox-text {
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6f6e6e;
+    text-transform: uppercase;
+}
+
+.top-filter-3-form {
+    padding-top: 15px;
+}
+
+.top-filter-3-range {
+    width: 262px;
+    /* border-radius: 3px;
+    background-color: #f0f0f0; */
+}
+
+.price-number {
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    color: #6f6e6e;
+}
+
+.price-number:nth-of-type(2) {
+    margin-left: 197px;
+}
+
+.sortByBlock {
+    background-color: #f3f3f3;
+    position: absolute;
+    top: 175px;
+    right: 22px;
+}
+
+.sortByBlock-content {
+    display: flex;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.sortByBlock-content button:nth-of-type(2) {
+    margin-right: 555px;
+}
+
+.sortByBlock-sortBy {
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+}
+
+.sortBy-text {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    color: #6f6e6e;
+    border: solid 1px #ebebeb;
+    background-color: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4px;
+    padding-bottom: 9px;
+}
+
+.sortBy-text-button {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    color: #6f6e6e;
+    border: solid 1px #ebebeb;
+    background-color: #ffffff;
+    padding: 0 15px;
 }
