@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+input:hover {
+    opacity: 0.5;
+}
+
+.container {
+    width: 1145px;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px #ececec;
+}
+
+img[alt="logo"] {
+    width: 59px;
+    height: 51px;
+    margin-right: 13px;
+}
+
+.brandText {
+    font-family: Lato;
+    font-size: 29px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: 0.68px;
+    color: #222222;
+    text-transform: uppercase;
+    margin-right: 37px;
+}
+
+.letter {
+    font-weight: 900;
+    color: #f16d7f;
+}
+
+form {
+    display: flex;
+    height: 38px;
+}
+
+.browseButton {
+    /* width: 87px;
+    height: 38px; */
+    border: solid 1px #e6e6e6;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.29;
+    letter-spacing: 0.35px;
+    text-align: right;
+    color: #222222;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.searchInput {
+    width: 280px;
+    border: solid 1px #e6e6e6;
+    background-color: #ffffff;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.29;
+    letter-spacing: 0.35px;
+    color: #a4a4a4;
+}
+
+.searchInput::placeholder {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.29;
+    letter-spacing: 0.35px;
+    color: #a4a4a4;
+    padding-left: 15px;
+}
+
+.searchButton {
+    /* font-family: FontAwesome; */
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    /* line-height: 2.29; */
+    letter-spacing: 0.35px;
+    background-color: #ffffff;
+    border: solid 1px #e6e6e6;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 11px;;
+    padding-left: 11px;
+}
+
+.basketIMG:hover {
+    opacity: 0.5;
+}
+
+.myAccountButton {
+    /* width: 130px;
+    height: 38px; */
+    background-color: #f16d7f;
+    border: 0;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    /* line-height: 2.13; */
+    letter-spacing: 0.38px;
+    color: #ffffff;
+    margin-left: 26px;
+    padding-left: 19px;
+    padding-right: 15px;;
+}
+
+.header-content a:nth-of-type(2) {
+    margin-left: auto;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #222222;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    opacity: 0.5;
+}
+
+.slider {
+    width: 1600px;
+    height: 613px;
+    background-image: url(images/sliderBackIMG.jpg);
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 225px;
+    margin-left: 35px;
+}
+
+.slider-content::before {
+    content: "";
+    width: 12px;
+    height: 97px;
+    background-color: #f16d7f;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+}
+
+.slider-text {
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.slider-text-theBrand {
+    font-size: 60px;
+    letter-spacing: 1.5px;
+}
+
+.slider-text-fashion {
+    color: #f16d7f;
+}
